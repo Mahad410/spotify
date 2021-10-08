@@ -1,0 +1,196 @@
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@800&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@500&display=swap');
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Display:wght@300&display=swap');
+    * {
+        padding: 0;
+        margin: 0;
+        font-family: 'Noto Sans Display', sans-serif;
+        user-select: none;
+    }
+    
+    header {
+        box-sizing: border-box;
+    }
+    
+    .nav {
+        background-color: #000;
+        height: 80px;
+        font-size: 1rem;
+        font-weight: 500;
+        min-height: 54px;
+        margin: 0 auto;
+        padding: 0 15px;
+        color: #fff;
+    }
+    
+    header .content {
+        width: 82%;
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        box-sizing: border-box;
+        margin: auto;
+    }
+    
+    .logo {
+        width: 132px;
+        filter: invert(100);
+        float: left;
+    }
+    
+    header .content .menu a {
+        text-decoration: none;
+        color: #fff;
+        padding: 28px 17px;
+    }
+    
+    header .content .menu a:hover {
+        color: #1ed760;
+    }
+    
+    main .background {
+        width: 100%;
+        height: 100vh;
+        background: #2941ab;
+        background-repeat: no-repeat;
+        box-sizing: border-box;
+        overflow: hidden;
+        text-align: center;
+    }
+    
+    main .background .crc {
+        background-image: url("https://www-growth.scdn.co/static/home/bursts.svg");
+        background-size: 170%;
+        background-position: 44% 7%;
+        min-height: 842px;
+        height: 100vh;
+    }
+    
+    main .background .text {
+        position: absolute;
+        color: #1ed760;
+        z-index: 2;
+        top: 50%;
+        left: 50%;
+        transform: translate(-35%, -35%);
+        padding: 0px 0px 0.67em;
+    }
+    
+    main .background .text h1 {
+        text-indent: -3.3em;
+        font-size: 146px;
+        letter-spacing: -0.04em;
+        line-height: 160px;
+    }
+    
+    main .background .cen {
+        display: block;
+        justify-content: center;
+        width: 520px;
+    }
+    
+    main .background .cen p {
+        text-align: left;
+        margin: 30px 90px;
+        font-size: 1.1rem;
+        font-weight: 400;
+    }
+    
+    main .background .cen button {
+        background-color: #1ed760;
+        padding: 14px 32px;
+        font-size: 1rem;
+        margin-top: 10px;
+        font-weight: 500;
+        border-radius: 500px;
+        border: none;
+    }
+    
+    main .background .cen button:hover {
+        transform: scale(1.06);
+        transition: all ease-in-out 100ms;
+        background-color: #2de26d;
+    }
+    
+    main .background .cen a {
+        text-decoration: none;
+        color: #2941ab;
+    }
+    
+    footer {
+        width: 100%;
+        background: #000;
+    }
+    
+    footer .footer {
+        padding: 80px 0 50px;
+        width: 82%;
+        box-sizing: border-box;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 70px;
+    }
+    
+    footer .footer .menu,
+    .footer .menu a {
+        display: block;
+        color: #fff;
+        text-decoration: none;
+        margin-top: 20px;
+        font-size: 0.9rem;
+    }
+    
+    footer .footer a:hover,
+    .end .pro a:hover {
+        color: #1ed760;
+    }
+    
+    .footer .menu p {
+        color: #999999;
+    }
+    
+    footer .footer .fa {
+        padding-top: 15px;
+        font-size: 25px;
+        width: 55px;
+        height: 55px;
+        text-align: center;
+        text-decoration: none;
+        margin: 5px 8px;
+        border-radius: 50%;
+        background-color: #222326;
+        color: #fff;
+        box-sizing: border-box;
+        float: right;
+    }
+    
+    footer .footer .fa:hover {
+        color: #1ed760;
+    }
+    
+    .end {
+        display: flex;
+        justify-content: space-between;
+        width: 82%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 50px;
+    }
+    
+    .end .pro a {
+        display: inline-block;
+        color: #ccc;
+        text-decoration: none;
+        font-size: 0.8rem;
+        font-weight: 300;
+        margin-right: 20px;
+    }
+    
+    .end_r {
+        color: #ccc;
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
