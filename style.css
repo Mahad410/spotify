@@ -5,7 +5,12 @@
         padding: 0;
         margin: 0;
         font-family: 'Noto Sans Display', sans-serif;
+        -webkit-user-select: none;
         user-select: none;
+    }
+    
+    body {
+        font-display: swap;
     }
     
     header {
@@ -17,10 +22,14 @@
         height: 80px;
         font-size: 1rem;
         font-weight: 500;
-        min-height: 54px;
         margin: 0 auto;
         padding: 0 15px;
         color: #fff;
+        position: fixed;
+        left: 0;
+        right: 0;
+        top: 0;
+        z-index: 99;
     }
     
     header .content {
@@ -121,6 +130,7 @@
     footer {
         width: 100%;
         background: #000;
+        box-sizing: border-box;
     }
     
     footer .footer {
@@ -141,6 +151,7 @@
         text-decoration: none;
         margin-top: 20px;
         font-size: 0.9rem;
+        box-sizing: border-box;
     }
     
     footer .footer a:hover,
@@ -193,4 +204,75 @@
         color: #ccc;
         font-size: 0.8rem;
         font-weight: 300;
+    }
+    
+    @media screen and (max-width:900px) {
+        .nav {
+            background-color: #000;
+            height: 50px;
+            padding: 5px 5px 0px;
+        }
+        header .content {
+            width: 98%;
+        }
+        .logo {
+            width: 85px;
+        }
+        header .content .menu {
+            display: none;
+        }
+        main .background .crc {
+            background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
+            background-size: 108%;
+            background-position: left bottom;
+        }
+        main .background .text {
+            transform: translate(-50%, -50%);
+        }
+        main .background .text h1 {
+            text-indent: 0;
+            font-size: 6rem;
+            line-height: 6.5rem;
+        }
+        footer .footer {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+        .footer .logo {
+            grid-column: 1/5;
+        }
+        .footer .social {
+            grid-column: 1/5;
+            display: flex;
+            flex-direction: row-reverse;
+            justify-content: left;
+            align-items: center;
+            margin-top: 6.5rem
+        }
+        footer .footer .fa {
+            padding-top: 11px;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        .end {
+            display: flex;
+            justify-content: space-between;
+            width: 82%;
+            margin-top: -4.8rem;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .end .pro a {
+            display: inline-block;
+            color: #ccc;
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-weight: 300;
+            margin-right: 20px;
+        }
+        .end_r {
+            color: #ccc;
+            font-size: 0.8rem;
+            font-weight: 300;
+        }
     }
