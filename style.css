@@ -223,8 +223,8 @@
         }
         main .background .crc {
             background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
-            background-size: 108%;
-            background-position: left bottom;
+            background-size: 122%;
+            background-position: center left;
         }
         main .background .text {
             transform: translate(-50%, -50%);
@@ -264,5 +264,39 @@
         .sidemenu button {
             background: none;
             border: none;
+        }
+        .overlay {
+            position: fixed;
+            display: none;
+            z-index: 100;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.3);
+            width: 100%;
+            height: 100vh;
+        }
+        .show_or {
+            display: block;
+        }
+        .sidenav {
+            position: fixed;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            z-index: 101;
+            background: #000;
+            width: 55%;
+            height: 100vh;
+            overflow: hidden;
+            color: #000;
+            transform: translateX(100%);
+            transition: transform 0.2s ease;
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+        }
+        .show_s {
+            transform: translateX(0);
         }
     }
