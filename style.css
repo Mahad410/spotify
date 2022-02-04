@@ -4,7 +4,7 @@
     * {
         padding: 0;
         margin: 0;
-        font-family: 'Noto Sans Display', sans-serif;
+        font-family: 'Noto Sans Display';
         -webkit-user-select: none;
         user-select: none;
     }
@@ -213,7 +213,7 @@
             padding: 5px 5px 0px;
         }
         header .content {
-            width: 98%;
+            width: 88%;
         }
         .logo {
             width: 85px;
@@ -255,24 +255,14 @@
             height: 40px;
         }
         .end {
-            display: flex;
-            justify-content: space-between;
-            width: 82%;
             margin-top: -4.8rem;
-            margin-left: auto;
-            margin-right: auto;
         }
-        .end .pro a {
-            display: inline-block;
-            color: #ccc;
-            text-decoration: none;
-            font-size: 0.8rem;
-            font-weight: 300;
-            margin-right: 20px;
+        .sidemenu .fa {
+            font-size: 24px;
+            color: #fff;
         }
-        .end_r {
-            color: #ccc;
-            font-size: 0.8rem;
-            font-weight: 300;
+        .sidemenu button {
+            background: none;
+            border: none;
         }
     }
