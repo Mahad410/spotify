@@ -221,8 +221,8 @@
         }
         main .background .crc {
             background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
-            background-size: 122%;
-            background-position: center left;
+            background-size: 125%;
+            background-position: bottom right;
         }
         main .background .text {
             transform: translate(-50%, -50%);
