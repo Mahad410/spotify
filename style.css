@@ -72,6 +72,7 @@
         background-position: 44% 7%;
         min-height: 842px;
         height: 100vh;
+        box-sizing: border-box;
     }
     
     main .background .text {
@@ -206,7 +207,6 @@
     
     @media screen and (max-width:900px) {
         .nav {
-            background-color: #000;
             height: 50px;
             padding: 5px 5px 0px;
         }
@@ -222,7 +222,7 @@
         main .background .crc {
             background-image: url("https://www-growth.scdn.co/static/home/bursts-mobile.svg");
             background-size: 125%;
-            background-position: bottom right;
+            background-position: center bottom;
         }
         main .background .text {
             transform: translate(-50%, -50%);
@@ -332,5 +332,72 @@
             text-decoration: none;
             color: #fff;
             font-size: 1.5rem;
+        }
+    }
+    
+    @media screen and (max-width:500px) {
+        main .background .crc {
+            background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+            background-position: center top 100%;
+            background-size: 195%;
+        }
+        main .background .text h1 {
+            text-indent: 0;
+            font-size: 4rem;
+            line-height: 5.5rem;
+        }
+        main .background .cen p {
+            margin: 1rem auto;
+            text-align: center;
+        }
+        main .background .cen {
+            width: 400px;
+            box-sizing: border-box;
+            margin: auto;
+        }
+        footer .footer {
+            display: block;
+        }
+        .footer .menu {
+            margin-bottom: 5rem;
+        }
+        .footer .logo {
+            margin-top: -1.2rem;
+        }
+        .footer .social {
+            margin-top: 2rem;
+        }
+        footer .footer .fa {
+            padding-top: 11px;
+            font-size: 20px;
+            width: 40px;
+            height: 40px;
+        }
+        .end {
+            margin-top: -4rem;
+        }
+        .sidelist ul li {
+            font-size: 1.5rem;
+        }
+        .sidelist .line {
+            margin: 1.5rem 0;
+        }
+        .sidelist ul li a {
+            font-size: 1rem;
+        }
+    }
+    
+    @media screen and (max-width:380px) {
+        main .background .crc {
+            background-image: url(https://www-growth.scdn.co/static/home/bursts-mobile.svg);
+            background-position: center bottom -60%;
+            background-size: 190%;
+        }
+        main .background .text h1 {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+        main .background .cen {
+            width: 300px;
         }
     }
